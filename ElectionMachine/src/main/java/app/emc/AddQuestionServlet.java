@@ -28,7 +28,7 @@ public class AddQuestionServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/addquestionform.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("jsp/addquestionform.jsp");
 		dispatcher.forward(request, response);
 	}
 

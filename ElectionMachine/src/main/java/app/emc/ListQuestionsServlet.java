@@ -37,7 +37,7 @@ public class ListQuestionsServlet extends HttpServlet {
 		request.setAttribute("Questions", questions);
 		
 		//Send data to JSP view
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/listquestions.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("jsp/listquestions.jsp");
 		dispatcher.forward(request, response);
 	}
 
